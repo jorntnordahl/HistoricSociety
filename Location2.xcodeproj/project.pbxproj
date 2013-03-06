@@ -23,6 +23,13 @@
 		0A1B5D0B16E65095000893F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1B5CE616E65094000893F1 /* Foundation.framework */; };
 		0A1B5D1316E65095000893F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B5D1116E65095000893F1 /* InfoPlist.strings */; };
 		0A1B5D1616E65095000893F1 /* Location2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B5D1516E65095000893F1 /* Location2Tests.m */; };
+		0A1B5D2016E650EA000893F1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1B5D1F16E650EA000893F1 /* MapKit.framework */; };
+		0A1B5D2516E65229000893F1 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B5D2416E65229000893F1 /* MapVC.m */; };
+		0A35B98A16E6EB1B000A4DFA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A35B98916E6EB1B000A4DFA /* CoreLocation.framework */; };
+		0AC427A216E70E0C0067C0FE /* ToastAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC427A116E70E0C0067C0FE /* ToastAlert.m */; };
+		0AC427A816E714E00067C0FE /* CrumbPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC427A516E714E00067C0FE /* CrumbPath.m */; };
+		0AC427A916E714E00067C0FE /* CrumbPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC427A716E714E00067C0FE /* CrumbPathView.m */; };
+		0AC427AC16E719860067C0FE /* MyLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC427AB16E719860067C0FE /* MyLocation.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,17 @@
 		0A1B5D1216E65095000893F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A1B5D1416E65095000893F1 /* Location2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location2Tests.h; sourceTree = "<group>"; };
 		0A1B5D1516E65095000893F1 /* Location2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location2Tests.m; sourceTree = "<group>"; };
+		0A1B5D1F16E650EA000893F1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0A1B5D2316E65229000893F1 /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
+		0A1B5D2416E65229000893F1 /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
+		0A35B98916E6EB1B000A4DFA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0AC427A016E70E0C0067C0FE /* ToastAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastAlert.h; sourceTree = "<group>"; };
+		0AC427A116E70E0C0067C0FE /* ToastAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastAlert.m; sourceTree = "<group>"; };
+		0AC427A416E714E00067C0FE /* CrumbPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrumbPath.h; sourceTree = "<group>"; };
+		0AC427A516E714E00067C0FE /* CrumbPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrumbPath.m; sourceTree = "<group>"; };
+		0AC427A616E714E00067C0FE /* CrumbPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrumbPathView.h; sourceTree = "<group>"; };
+		0AC427A716E714E00067C0FE /* CrumbPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrumbPathView.m; sourceTree = "<group>"; };
+		0AC427AB16E719860067C0FE /* MyLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyLocation.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A35B98A16E6EB1B000A4DFA /* CoreLocation.framework in Frameworks */,
+				0A1B5D2016E650EA000893F1 /* MapKit.framework in Frameworks */,
 				0A1B5CE516E65094000893F1 /* UIKit.framework in Frameworks */,
 				0A1B5CE716E65094000893F1 /* Foundation.framework in Frameworks */,
 				0A1B5CE916E65094000893F1 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +107,8 @@
 		0A1B5CD816E65094000893F1 = {
 			isa = PBXGroup;
 			children = (
+				0A35B98916E6EB1B000A4DFA /* CoreLocation.framework */,
+				0A1B5D1F16E650EA000893F1 /* MapKit.framework */,
 				0A1B5CEA16E65094000893F1 /* Location2 */,
 				0A1B5D0E16E65095000893F1 /* Location2Tests */,
 				0A1B5CE316E65094000893F1 /* Frameworks */,
@@ -117,6 +139,11 @@
 		0A1B5CEA16E65094000893F1 /* Location2 */ = {
 			isa = PBXGroup;
 			children = (
+				0AC427AA16E719730067C0FE /* Images */,
+				0AC427A316E714C30067C0FE /* Overlay */,
+				0AC4279F16E70DA50067C0FE /* Alerts */,
+				0A1B5D2216E651DA000893F1 /* Tables */,
+				0A1B5D2116E651D1000893F1 /* Views */,
 				0A1B5CF316E65094000893F1 /* AppDelegate.h */,
 				0A1B5CF416E65094000893F1 /* AppDelegate.m */,
 				0A1B5CFC16E65094000893F1 /* MainStoryboard.storyboard */,
@@ -158,6 +185,50 @@
 				0A1B5D1116E65095000893F1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A1B5D2116E651D1000893F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A1B5D2316E65229000893F1 /* MapVC.h */,
+				0A1B5D2416E65229000893F1 /* MapVC.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0A1B5D2216E651DA000893F1 /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tables;
+			sourceTree = "<group>";
+		};
+		0AC4279F16E70DA50067C0FE /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				0AC427A016E70E0C0067C0FE /* ToastAlert.h */,
+				0AC427A116E70E0C0067C0FE /* ToastAlert.m */,
+			);
+			name = Alerts;
+			sourceTree = "<group>";
+		};
+		0AC427A316E714C30067C0FE /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				0AC427A416E714E00067C0FE /* CrumbPath.h */,
+				0AC427A516E714E00067C0FE /* CrumbPath.m */,
+				0AC427A616E714E00067C0FE /* CrumbPathView.h */,
+				0AC427A716E714E00067C0FE /* CrumbPathView.m */,
+			);
+			name = Overlay;
+			sourceTree = "<group>";
+		};
+		0AC427AA16E719730067C0FE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0AC427AB16E719860067C0FE /* MyLocation.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +307,7 @@
 				0A1B5CF916E65094000893F1 /* Default@2x.png in Resources */,
 				0A1B5CFB16E65094000893F1 /* Default-568h@2x.png in Resources */,
 				0A1B5CFE16E65094000893F1 /* MainStoryboard.storyboard in Resources */,
+				0AC427AC16E719860067C0FE /* MyLocation.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +345,10 @@
 				0A1B5CF116E65094000893F1 /* main.m in Sources */,
 				0A1B5CF516E65094000893F1 /* AppDelegate.m in Sources */,
 				0A1B5D0116E65094000893F1 /* ViewController.m in Sources */,
+				0A1B5D2516E65229000893F1 /* MapVC.m in Sources */,
+				0AC427A216E70E0C0067C0FE /* ToastAlert.m in Sources */,
+				0AC427A816E714E00067C0FE /* CrumbPath.m in Sources */,
+				0AC427A916E714E00067C0FE /* CrumbPathView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +529,7 @@
 				0A1B5D1B16E65095000893F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A1B5D1C16E65095000893F1 /* Build configuration list for PBXNativeTarget "Location2Tests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +538,7 @@
 				0A1B5D1E16E65095000893F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
