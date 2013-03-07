@@ -107,8 +107,6 @@
 		0A1B5CD816E65094000893F1 = {
 			isa = PBXGroup;
 			children = (
-				0A35B98916E6EB1B000A4DFA /* CoreLocation.framework */,
-				0A1B5D1F16E650EA000893F1 /* MapKit.framework */,
 				0A1B5CEA16E65094000893F1 /* Location2 */,
 				0A1B5D0E16E65095000893F1 /* Location2Tests */,
 				0A1B5CE316E65094000893F1 /* Frameworks */,
@@ -128,6 +126,8 @@
 		0A1B5CE316E65094000893F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A35B98916E6EB1B000A4DFA /* CoreLocation.framework */,
+				0A1B5D1F16E650EA000893F1 /* MapKit.framework */,
 				0A1B5CE416E65094000893F1 /* UIKit.framework */,
 				0A1B5CE616E65094000893F1 /* Foundation.framework */,
 				0A1B5CE816E65094000893F1 /* CoreGraphics.framework */,

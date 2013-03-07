@@ -16,13 +16,7 @@
 
 @interface MapVC : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
-@property (nonatomic, strong) CLLocationManager *locationManager;
-@property (nonatomic) CLLocationDirection currentHeading;
-@property (nonatomic, strong) CLGeocoder *geocoder;
-@property (weak, nonatomic) IBOutlet UITextField *addressField;
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
-@property (nonatomic, strong) CrumbPath *crumbs;
-@property (nonatomic, strong) CrumbPathView *crumbView;
+
 
 
 @end
