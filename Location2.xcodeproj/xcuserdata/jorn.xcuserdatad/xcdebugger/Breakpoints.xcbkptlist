@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "286"
-         endingLineNumber = "286"
+         startingLineNumber = "308"
+         endingLineNumber = "308"
          landmarkName = "-locationForString"
          landmarkType = "5">
       </FileBreakpoint>
@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "201"
-         endingLineNumber = "201"
+         startingLineNumber = "219"
+         endingLineNumber = "219"
          landmarkName = "-startStandardUpdates"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "125"
-         endingLineNumber = "125"
+         startingLineNumber = "143"
+         endingLineNumber = "143"
          landmarkName = "@implementation MapVC"
          landmarkType = "3">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "216"
-         endingLineNumber = "216"
+         startingLineNumber = "234"
+         endingLineNumber = "234"
          landmarkName = "-startSignificantChangeUpdates"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "224"
-         endingLineNumber = "224"
+         startingLineNumber = "242"
+         endingLineNumber = "242"
          landmarkName = "@implementation MapVC"
          landmarkType = "3">
       </FileBreakpoint>
@@ -86,11 +86,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "247"
-         endingLineNumber = "247"
+         startingLineNumber = "265"
+         endingLineNumber = "265"
          landmarkName = "@implementation MapVC"
          landmarkType = "3">
       </FileBreakpoint>
@@ -99,11 +99,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "260"
-         endingLineNumber = "260"
+         startingLineNumber = "278"
+         endingLineNumber = "278"
          landmarkName = "@implementation MapVC"
          landmarkType = "3">
       </FileBreakpoint>
@@ -112,11 +112,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "37"
-         endingLineNumber = "37"
+         startingLineNumber = "44"
+         endingLineNumber = "44"
          landmarkName = "-geocoder"
          landmarkType = "5">
       </FileBreakpoint>
@@ -125,11 +125,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "293"
-         endingLineNumber = "293"
+         startingLineNumber = "315"
+         endingLineNumber = "315"
          landmarkName = "-locationForString"
          landmarkType = "5">
       </FileBreakpoint>
@@ -147,15 +147,15 @@
          landmarkType = "2">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "384"
-         endingLineNumber = "384"
+         startingLineNumber = "413"
+         endingLineNumber = "413"
          landmarkName = "-mapView:viewForOverlay:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -164,11 +164,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "320"
-         endingLineNumber = "320"
+         startingLineNumber = "349"
+         endingLineNumber = "349"
          landmarkName = "-locationManager:didUpdateToLocation:fromLocation:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -177,11 +177,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "117"
-         endingLineNumber = "117"
+         startingLineNumber = "135"
+         endingLineNumber = "135"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -190,11 +190,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "341"
-         endingLineNumber = "341"
+         startingLineNumber = "370"
+         endingLineNumber = "370"
          landmarkName = "-locationManager:didUpdateToLocation:fromLocation:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -203,12 +203,38 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Location2/MapVC.m"
-         timestampString = "384325357.937384"
+         timestampString = "384366063.74883"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "370"
-         endingLineNumber = "370"
+         startingLineNumber = "399"
+         endingLineNumber = "399"
          landmarkName = "-locationManager:didUpdateToLocation:fromLocation:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Location2/MapVC.m"
+         timestampString = "384366063.74883"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "449"
+         endingLineNumber = "449"
+         landmarkName = "-doNavigateToLastFoundLocation:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Location2/MapVC.m"
+         timestampString = "384366063.74883"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "448"
+         endingLineNumber = "448"
+         landmarkName = "-doNavigateToLastFoundLocation:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

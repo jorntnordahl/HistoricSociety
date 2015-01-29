@@ -17,6 +17,13 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) CrumbPath *crumbs;
 @property (nonatomic, strong) CrumbPathView *crumbView;
+@property (weak, nonatomic) IBOutlet UIButton *locateMeButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *navigateButton;
+
+
+// local properties:
+@property (nonatomic, strong) CLPlacemark *lastFoundPlace;
+
 
 @end
 
@@ -53,6 +60,17 @@
 -(void) viewDidLoad
 {
     [super viewDidLoad];
+    
+    // add keyboard listener to the view:
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+    
+    // diable bottom toolbar buttons:
+    self.navigateButton.enabled = NO;
+
 
     // initialize our AudioSession -
     // this function has to be called once before calling any other AudioSession functions
@@ -278,6 +296,10 @@
     NSString *name = self.addressField.text;
     NSLog(@"Locating Address: %@", name);
     
+    // clear the current found place:
+    self.lastFoundPlace = nil;
+    self.navigateButton.enabled = NO;
+    
     if (self.geocoder)
     {
         [self.geocoder geocodeAddressString:name completionHandler:^(NSArray* placemarks, NSError* error)
@@ -297,6 +319,13 @@
                         NSLog(@"Found Location %@", [aPlacemark description]);
                         MKPlacemark *placemark = [[MKPlacemark alloc] initWithPlacemark:aPlacemark  ];
                         [self.mapView addAnnotation:placemark];
+                        
+                        // remember the first found place:
+                        if (self.lastFoundPlace == nil)
+                        {
+                            self.lastFoundPlace = aPlacemark;
+                            self.navigateButton.enabled = YES;
+                        }
                     }
                 }
                 else
@@ -343,7 +372,7 @@
                 // This is the first time we're getting a location update, so create
                 // the CrumbPath and add it to the map.
                 //
-                _crumbs = [[CrumbPath alloc] initWithCenterCoordinate:newLocation.coordinate];
+                self.crumbs = [[CrumbPath alloc] initWithCenterCoordinate:newLocation.coordinate];
                 [self.mapView addOverlay:self.crumbs];
                 
                 // On the first location update only, zoom map to user location
@@ -388,6 +417,14 @@
     return self.crumbView;
 }
 
+/*- (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id<MKOverlay>)overlay
+{
+    if(!self.crumbView)
+    {
+        self.crumbView = [[CrumbPathView alloc] initWithOverlay:overlay];
+    }
+    return self.crumbView;
+}*/
 
 #define BASE_RADIUS 0.0144927536
 
@@ -404,6 +441,29 @@
     span.longitudeDelta = BASE_RADIUS / 0.01;  // span dimensions
     region.span = span; // Set the region's span to the new span.
     [self.mapView setRegion:region animated:YES]; // to set the map to the newly created region
+}
+
+- (IBAction)doNavigateToLastFoundLocation:(id)sender
+{
+    NSLog(@"Navigating...");
+    if (self.lastFoundPlace)
+    {
+        CLLocation *location = self.lastFoundPlace.location;
+        
+        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000);
+        
+        
+        //CLLocation *location = [[CLLocation alloc] initWithLatitude:self.lastFoundPlace.l
+                                //self.mapView.centerCoordinate.latitude longitude:self.mapView.centerCoordinate.longitude]; //Get your location and create a CLLocation
+        //MKCoordinateRegion region; //create a region.  No this is not a pointer
+        //region.center = location.coordinate;  // set the region center to your current location
+        MKCoordinateSpan span; // create a range of your view
+        span.latitudeDelta = BASE_RADIUS / 0.01;  // span dimensions.  I have BASE_RADIUS defined as 0.0144927536 which is equivalent to 1 mile
+        span.longitudeDelta = BASE_RADIUS / 0.01;  // span dimensions
+        region.span = span; // Set the region's span to the new span.
+        [self.mapView setRegion:region animated:YES]; // to set the map to the newly created region
+
+    }
 }
 
 @end
